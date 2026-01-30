@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Addis Living</title>
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head><body data-page="contact"><a class="skip" href="#m">Skip</a>
+
+<header class="top"><div class="w">
+  <a class="brand" href="index.html"><span class="logo">AL</span><b>Addis<br>Living</b></a>
+  <nav class="links" aria-label="Primary"><a href="index.html">Home</a><a href="planner.html">Planner</a><a class="a" href="contact.html">Contact</a></nav>
+</div></header>
+
+<main id="m" class="w">
+  <h1>Contact</h1><p class="mut">Validation + saved messages.</p>
+  <section class="two">
+    <article class="card">
+      <form id="cForm" novalidate>
+        <label>Name <input id="cName" required></label>
+        <label>Email <input id="cEmail" type="email" required></label>
+        <label>Message <textarea id="cMsg" rows="4" required></textarea></label>
+        <button class="btn dark" type="submit">Send</button>
+        <small id="cErr" class="err" aria-live="polite"></small> <small id="cOk" class="ok" aria-live="polite"></small>
+      </form>
+    </article>
+    <aside class="card">
+      <div class="row"><b>Saved</b><button class="btn o" id="cClear" type="button">Clear</button></div>
+      <ul id="cList" aria-live="polite"></ul>
+    </aside>
+  </section>
+</main>
+
+<footer class="foot"><div class="w">© <span id="year"></span></div></footer>
+</body></html>

@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planner | Addis Living</title>
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head><body data-page="planner"><a class="skip" href="#m">Skip</a>
+
+<header class="top"><div class="w">
+  <a class="brand" href="index.html"><span class="logo">AL</span><b>Addis<br>Living</b></a>
+  <nav class="links" aria-label="Primary"><a href="index.html">Home</a><a class="a" href="planner.html">Planner</a><a href="contact.html">Contact</a></nav>
+</div></header>
+
+<main id="m" class="w">
+  <h1>Study Planner</h1><p class="mut">Saved in LocalStorage.</p>
+  <section class="two">
+    <article class="card">
+      <form id="tForm" novalidate>
+        <label>Task <input id="tTitle" required></label>
+        <label>Priority <select id="tPri" required><option value="">Select</option><option>low</option><option>medium</option><option>high</option></select></label>
+        <button class="btn dark" type="submit">Add</button><small id="tErr" class="err" aria-live="polite"></small>
+      </form>
+    </article>
+    <article class="card">
+      <div class="row"><b>Tasks</b>
+        <select id="tFilter" aria-label="Filter"><option value="all">All</option><option value="open">Open</option><option value="done">Done</option></select>
+      </div>
+      <ul id="tList" class="list" aria-live="polite"></ul>
+      <div class="row"><button class="btn o" id="tClearDone" type="button">Clear Done</button><button class="btn o" id="tClearAll" type="button">Clear All</button></div>
+    </article>
+  </section>
+</main>
+
+<footer class="foot"><div class="w">© <span id="year"></span></div></footer>
+</body></html>
